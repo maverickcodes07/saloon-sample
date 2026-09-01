@@ -1,4 +1,5 @@
-import { motion, useReducedMotion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { Star, MapPin } from "lucide-react";
 import { PHOTOS, SALON } from "@/data/salon";
 import { WhatsAppButton, CallButton } from "@/components/salon/primitives";
@@ -23,25 +24,42 @@ const Line = ({ children, delay }) => {
 
 export const Hero = () => {
   const reduce = useReducedMotion();
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
+  const overlayOpacity = useTransform(scrollYProgress, [0, 1], [1, 0.4]);
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "-12%"]);
+
   return (
-    <section id="hero" className="relative min-h-[100svh] w-full overflow-hidden bg-charcoal">
+    <section
+      ref={ref}
+      id="hero"
+      className="relative min-h-[100svh] w-full overflow-hidden bg-charcoal"
+    >
       <motion.div
-        className="absolute inset-0"
-        initial={reduce ? false : { scale: 1.12 }}
+        className="absolute inset-0 will-change-transform"
+        style={reduce ? {} : { y: imgY }}
+        initial={reduce ? false : { scale: 1.14 }}
         animate={reduce ? {} : { scale: 1 }}
         transition={{ duration: 2.2, ease: EASE }}
       >
         <img
           src={PHOTOS.storefront}
           alt="Bloom Unisex Salon storefront illuminated at night in Vadodara"
-          className="h-full w-full object-cover object-center"
+          className="h-[112%] w-full object-cover object-center"
           fetchpriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/45" />
+        <motion.div
+          className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/45"
+          style={reduce ? {} : { opacity: overlayOpacity }}
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/30 to-transparent" />
       </motion.div>
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-5 pb-28 pt-32 sm:px-8 sm:pb-32 lg:pb-36">
+      <motion.div
+        style={reduce ? {} : { y: contentY }}
+        className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-5 pb-28 pt-32 sm:px-8 sm:pb-32 lg:pb-36"
+      >
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 16 }}
           animate={reduce ? {} : { opacity: 1, y: 0 }}
@@ -109,7 +127,7 @@ export const Hero = () => {
           <span className="text-cream/50">·</span>
           <span>Rated by happy clients on Google</span>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -130,7 +130,7 @@ export const GALLERY = [
   { src: PHOTOS.pedicure, alt: "Luxury pedicure suite with rose-petal soak", span: "normal" },
 ];
 
-// Real, verified Google reviews (lightly trimmed, faithful to originals)
+// Real, verified Google reviews (faithful to originals, lightly trimmed)
 export const TESTIMONIALS = [
   {
     name: "Ritu Patel",
@@ -167,5 +167,53 @@ export const TESTIMONIALS = [
     rating: 5,
     service: "Protein Treatment",
     text: "An exceptional protein treatment experience at Bloom Unisex Salon. Harun provided a detailed and professional consultation, while Heli delivered the service with absolute precision and care.",
+  },
+  {
+    name: "Shraddha Shah",
+    rating: 5,
+    service: "Smoothening & Global Colour",
+    text: "I have done hair smoothening and today I have done global colour too — the experience was great. Staff is very supportive with nice guidance and work by Arsh and Harun. Thank you for your superb work, highly recommended!",
+  },
+  {
+    name: "Sapna Khandelwal",
+    rating: 5,
+    service: "Keratin Treatment",
+    text: "Absolutely loved the keratin treatment experience! Hair feels silky smooth and frizz-free with a beautiful natural shine. Harun did the consultation very well and gave proper guidance. Looking forward to visiting again!",
+  },
+  {
+    name: "Dhruvi Malaviya",
+    rating: 5,
+    service: "Hair Botox",
+    text: "Got a Botox treatment done at Bloom Salon and had a really good experience. Heli explained everything properly and suggested what would suit my hair best. She was very polite and supportive throughout, and I loved the smooth results.",
+  },
+  {
+    name: "Zarana Sikligar",
+    rating: 5,
+    service: "Hair Spa",
+    text: "The hair spa at Bloom with Heli was honestly one of the most relaxing experiences. The care, softness and calm energy throughout the session made it feel truly premium.",
+  },
+  {
+    name: "Shambhavi",
+    rating: 5,
+    service: "Haircut",
+    text: "Greatest experience ever — I just love my haircut so much, done by Arsh bhaiya! Must try once. Best salon in the town, and the ambience is lovely too.",
+  },
+  {
+    name: "Anamika Singh",
+    rating: 5,
+    service: "Haircut",
+    text: "The hairstylist Arsh carefully listened to what I wanted and gave helpful suggestions based on my face shape and hair texture. The haircut turned out exactly as I imagined — clean, well-blended, and comfortable throughout.",
+  },
+  {
+    name: "Pranisha Gupta",
+    rating: 5,
+    service: "Salon Experience",
+    text: "Sometimes a salon visit becomes more than just a service — it becomes a feeling. That's exactly how my experience at Bloom felt: peaceful, premium and genuinely caring. I walked out feeling fresh, confident and happy.",
+  },
+  {
+    name: "Patel Kushagra",
+    rating: 5,
+    service: "Haircut & Beard",
+    text: "I had a haircut through Junaid. He made a good effort and did it exactly the way I wanted. This is a good place to get a haircut and beard trimming.",
   },
 ];

@@ -1,7 +1,12 @@
 import { Instagram, MapPin, Phone, Clock } from "lucide-react";
 import { SALON, NAV_LINKS, SERVICES, WHATSAPP_URL, TEL_URL } from "@/data/salon";
 
-const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+const scrollTo = (id) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (window.__lenis) window.__lenis.scrollTo(el, { offset: -72 });
+  else el.scrollIntoView({ behavior: "smooth" });
+};
 
 export const Footer = () => (
   <footer className="bg-ink text-cream" data-testid="footer">

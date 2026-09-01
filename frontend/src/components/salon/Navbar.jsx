@@ -5,7 +5,9 @@ import { NAV_LINKS, WHATSAPP_URL, SALON } from "@/data/salon";
 
 const scrollTo = (id) => {
   const el = document.getElementById(id);
-  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (!el) return;
+  if (window.__lenis) window.__lenis.scrollTo(el, { offset: -72 });
+  else el.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
 export const Navbar = () => {
