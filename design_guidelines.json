@@ -1,0 +1,207 @@
+{
+  "brand": {
+    "name": "Bloom Unisex Salon",
+    "location": "Waghodia Road, Vadodara",
+    "phone": "+91 88491 03859",
+    "whatsapp_formatted": "918849103859",
+    "instagram": "@bloomsalon.bm",
+    "rating": "4.6★",
+    "hours": "Open Daily 10:30 AM – 8:30 PM",
+    "positioning": "High-End Luxury Unisex Salon & Beauty Studio"
+  },
+  "palette": {
+    "primary_bg": "#FAFAFA",
+    "secondary_bg": "#F4F1EA",
+    "dark_anchor": "#121212",
+    "charcoal": "#1C1C1C",
+    "cream_card": "#F7F5F0",
+    "muted_gold_accent": "#C5A059",
+    "muted_gold_hover": "#B38F46",
+    "subtle_border": "#E5E0D8",
+    "text_dark": "#1C1C1C",
+    "text_muted": "#66615C",
+    "text_light": "#FAFAFA",
+    "whatsapp_green": "#25D366"
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond, Playfair Display, serif",
+    "body_font": "Plus Jakarta Sans, Inter, sans-serif",
+    "heading_styles": {
+      "hero_h1": "font-serif text-4xl sm:text-5xl md:text-6xl tracking-tight text-charcoal font-semibold leading-tight",
+      "section_h2": "font-serif text-3xl sm:text-4xl lg:text-5xl tracking-tight text-charcoal font-medium",
+      "card_h3": "font-serif text-xl sm:text-2xl text-charcoal font-medium"
+    },
+    "overline": "uppercase tracking-[0.25em] text-xs font-semibold text-muted-gold"
+  },
+  "layout_and_sections": [
+    {
+      "section_id": "navbar",
+      "type": "fixed_glass_nav",
+      "description": "Sticky top bar with backdrop-blur-xl bg-white/80, 1px border-b border-subtle, brand logo, navigation links, and desktop primary CTAs.",
+      "ctas": [
+        {
+          "label": "Call Salon",
+          "action": "tel:+918849103859",
+          "data_testid": "nav-call-btn"
+        },
+        {
+          "label": "WhatsApp Us",
+          "action": "https://wa.me/918849103859?text=Hello%20Bloom%20Unisex%20Salon%2C%20I%20would%20like%20to%20inquire%20about%20a%20booking.",
+          "data_testid": "nav-whatsapp-btn"
+        }
+      ]
+    },
+    {
+      "section_id": "hero",
+      "type": "kinetic_editorial_hero",
+      "description": "Asymmetric hero with high-end photography background, subtle ambient zoom, serif typography, dual quick CTAs, and live status badge (Open Daily 10:30 AM–8:30 PM).",
+      "eyebrow": "PREMIUM UNISEX SALON • WAGHODIA RD, VADODARA",
+      "headline": "Crafting Timeless Elegance & Bespoke Beauty",
+      "supporting_text": "Experience elevated hair styling, restorative spa treatments, luxury beauty facials, and precision grooming tailored to your distinct personality.",
+      "ctas": {
+        "call_button": {
+          "text": "Call Salon (+91 88491 03859)",
+          "href": "tel:+918849103859",
+          "data_testid": "hero-call-cta"
+        },
+        "whatsapp_button": {
+          "text": "WhatsApp Us",
+          "href": "https://wa.me/918849103859?text=Hi%20Bloom%20Salon%2C%20I%20want%20to%20book%20an%20appointment.",
+          "data_testid": "hero-whatsapp-cta"
+        }
+      }
+    },
+    {
+      "section_id": "trust_strip",
+      "type": "highlight_metrics",
+      "description": "Warm bronze & cream metric strip displaying Google Rating, Experience, Verified Care, and Location landmark.",
+      "metrics": [
+        { "label": "4.6★ Google Rating", "sub": "150+ Verified Client Reviews" },
+        { "label": "Unisex Services", "sub": "Hair • Beauty • Makeup • Grooming" },
+        { "label": "Waghodia Rd, Vadodara", "sub": "Easy Parking & Prime Location" },
+        { "label": "Open 7 Days", "sub": "10:30 AM – 8:30 PM" }
+      ]
+    },
+    {
+      "section_id": "about",
+      "type": "editorial_story",
+      "description": "Short brand story narrative with side-by-side high resolution salon imagery, accent text, and signature salon values."
+    },
+    {
+      "section_id": "services",
+      "type": "tabbed_editorial_showcase",
+      "description": "Categorized interactive tabs for Hair Care, Beauty & Skin, Professional Makeup, and Men's Grooming with realistic descriptions, durations, and key benefits (no invented pricing).",
+      "categories": [
+        {
+          "id": "hair",
+          "title": "Hair Architecture & Treatments",
+          "items": [
+            "Precision Haircuts & Styling",
+            "Keratin & Hair Botox Treatment",
+            "Protein Reconstruction Therapy",
+            "Deep Nourishing Hair Spa",
+            "Global Hair Coloring & Balayage",
+            "Smoothening & Straightening"
+          ]
+        },
+        {
+          "id": "beauty",
+          "title": "Skin & Body Care",
+          "items": [
+            "Hydrating & Radiance Facials",
+            "Rose Petal Luxury Pedicure & Manicure",
+            "Organic Skin Polishing & De-Tan",
+            "Precision Waxing & Threading"
+          ]
+        },
+        {
+          "id": "makeup",
+          "title": "Occasion & Bridal Makeup",
+          "items": [
+            "HD Bridal Makeup",
+            "Party & Engagement Glam",
+            "Airbrush Flawless Finish",
+            "Pre-Bridal Grooming Packages"
+          ]
+        },
+        {
+          "id": "grooming",
+          "title": "Men's Luxury Grooming",
+          "items": [
+            "Beard Styling & Sculpting",
+            "Classic Hot Towel Shave",
+            "Men's Executive Haircut & Wash",
+            "Scalp Detox & Hair Spa"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "why_choose_us",
+      "type": "bento_grid",
+      "description": "4-part bento grid highlighting Hygiene & Sanitization, Certified Master Stylists, Premium Product Lines, and Tailored Consultation."
+    },
+    {
+      "section_id": "gallery",
+      "type": "masonry_lightbox",
+      "description": "Editorial gallery showing real salon ambience (storefront signage, interior aesthetic, spa suite, pedicure setup) with image zoom hover effects and full-screen lightbox modal.",
+      "data_testid": "gallery-grid"
+    },
+    {
+      "section_id": "testimonials",
+      "type": "client_reviews_carousel",
+      "description": "Customer reviews featuring verified Google 4.6★ reviews, client names, ratings, and feedback."
+    },
+    {
+      "section_id": "contact_location",
+      "type": "interactive_contact_map",
+      "description": "Direct contact card, live status badge, operating hours, quick address copy button, and embedded interactive Google Map with 'Get Directions' CTA.",
+      "address": "Waghodia Road, Vadodara, Gujarat 390019",
+      "ctas": {
+        "directions_button": {
+          "label": "Get Directions on Google Maps",
+          "url": "https://maps.google.com/?q=Bloom+Unisex+Salon+Waghodia+Road+Vadodara",
+          "data_testid": "get-directions-btn"
+        }
+      }
+    },
+    {
+      "section_id": "footer",
+      "type": "luxury_minimal_footer",
+      "description": "Large typography brand mark, quick link menu, operating hours summary, Instagram handle @bloomsalon.bm link, and contact details."
+    },
+    {
+      "section_id": "persistent_ctas",
+      "type": "floating_and_fixed_bars",
+      "description": "Floating WhatsApp icon button on Desktop bottom-right + Fixed dual action bar (Call / WhatsApp) anchored to mobile screen bottom.",
+      "desktop_whatsapp_testid": "desktop-floating-whatsapp",
+      "mobile_bar_call_testid": "mobile-bottom-call-btn",
+      "mobile_bar_whatsapp_testid": "mobile-bottom-whatsapp-btn"
+    }
+  ],
+  "image_urls": {
+    "hero_bg": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "about_editorial": "https://images.pexels.com/photos/7195808/pexels-photo-7195808.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "hair_service": "https://images.unsplash.com/photo-1629397685944-7073f5589754?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "beauty_service": "https://images.unsplash.com/photo-1675034743339-0b0747047727?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "spa_interior": "https://images.unsplash.com/photo-1760862652442-e8ff7ebdd2f8?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "barber_grooming": "https://images.pexels.com/photos/7195814/pexels-photo-7195814.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "instructions_to_main_agent": [
+    "Ensure all interactive buttons, links, and key items include explicit data-testid attributes for testing.",
+    "Do not include any pricing numbers in service lists unless explicitly asked.",
+    "Both Call (+91 88491 03859) and WhatsApp links must be active, formatted, and easily reachable.",
+    "Mobile layout must include a fixed bottom dual bar with 'Call Salon' and 'WhatsApp Salon' buttons.",
+    "Desktop layout must feature a subtle floating WhatsApp icon on the bottom right.",
+    "Use raw Tailwind CSS styling with custom fonts loaded from Google Fonts (Cormorant Garamond & Plus Jakarta Sans).",
+    "Implement full-screen gallery lightbox modal on gallery thumbnail click.",
+    "Maintain strict APCA contrast standards using warm cream (#FAFAFA / #F4F1EA), deep charcoal (#1C1C1C), and muted gold (#C5A059)."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic outputs. Create creative, distinctive frontends that surprise and delight.",
+    "Do not use purple gradients or heavy dark-only themes. Stick to luxury warm cream, charcoal, and muted gold.",
+    "Ensure all buttons have hover, active, and focus styles with data-testid attributes.",
+    "All navigation links must be clear and smoothly scroll to their target sections.",
+    "Never use generic AI emojis (🤖, 🧠, 💡) for icons; use Phosphor or Lucide icons."
+  ]
+}
