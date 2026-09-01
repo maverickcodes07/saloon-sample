@@ -43,9 +43,32 @@ export const PHOTOS = {
 export const NAV_LINKS = [
   { label: "About", id: "about" },
   { label: "Services", id: "services" },
+  { label: "Results", id: "results" },
   { label: "Gallery", id: "gallery" },
   { label: "Reviews", id: "reviews" },
   { label: "Contact", id: "contact" },
+];
+
+// Illustrative representative results (to be replaced with real client photos, with consent)
+export const TRANSFORMATIONS = [
+  {
+    id: "keratin",
+    label: "Keratin Smoothening",
+    before:
+      "https://static.prod-images.emergentagent.com/jobs/4828422f-dc95-447f-b337-13ccd3acd321/images/3341be9758fdfef6df97be343eb26df0706ddd13e6d2b9542960438b23561a70.jpeg",
+    after:
+      "https://static.prod-images.emergentagent.com/jobs/4828422f-dc95-447f-b337-13ccd3acd321/images/d03db697792bd99bee4ce82813da640da4a1275afb503ac8c310d819e5cf5acc.jpeg",
+    note: "Frizzy, dry hair transformed to sleek, glossy and frizz-free.",
+  },
+  {
+    id: "colour",
+    label: "Global Colour",
+    before:
+      "https://static.prod-images.emergentagent.com/jobs/4828422f-dc95-447f-b337-13ccd3acd321/images/4c16470f85eed9ed12878f16b8dd468f7301f2b084f2916e484fb8e2fdd65dbc.jpeg",
+    after:
+      "https://static.prod-images.emergentagent.com/jobs/4828422f-dc95-447f-b337-13ccd3acd321/images/8a609d67352fbf8faf351626fe794bed4f819ffc8a1d7e228649aac9a41e28b9.jpeg",
+    note: "Flat, dull colour revived with rich, dimensional shine.",
+  },
 ];
 
 export const TRUST = [

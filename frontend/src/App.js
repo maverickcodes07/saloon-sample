@@ -7,6 +7,7 @@ import { TrustStrip } from "@/components/salon/TrustStrip";
 import { About } from "@/components/salon/About";
 import { Marquee } from "@/components/salon/Marquee";
 import { Services } from "@/components/salon/Services";
+import { Results } from "@/components/salon/Results";
 import { WhyChooseUs } from "@/components/salon/WhyChooseUs";
 import { Gallery } from "@/components/salon/Gallery";
 import { InstagramFeed } from "@/components/salon/InstagramFeed";
@@ -48,6 +49,7 @@ function App() {
         <About />
         <Marquee />
         <Services />
+        <Results />
         <WhyChooseUs />
         <Gallery />
         <InstagramFeed />
